@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"/>
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_margin="20dp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toEndOf="@id/View2"
+        app:layout_constraintTop_toBottomOf="@+id/View1"
+        app:layout_constraintStart_toStartOf="parent"
+     />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/View2"
+        app:layout_constraintTop_toBottomOf="@+id/View1" />
+
+    <View
+        android:id="@+id/View4"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_margin="20dp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/View5"
+        app:layout_constraintTop_toBottomOf="@id/View2"
+        />
+    <View
+        android:id="@+id/View5"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View3"
+        app:layout_constraintStart_toEndOf="@+id/View4"
+        />
+    <View
+        android:id="@+id/View6"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_margin="20dp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View4"
+        />
+
+    <View
+        android:id="@+id/View7"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View5"
+        app:layout_constraintStart_toEndOf="@+id/View6"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
